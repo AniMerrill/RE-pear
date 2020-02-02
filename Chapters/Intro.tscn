@@ -6,7 +6,7 @@
 
 [node name="Intro" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
-delay = 1.0
+delay = 5.0
 nextChapter = "res://Chapters/MainTitle.tscn"
 
 [node name="Background" parent="." index="0"]
