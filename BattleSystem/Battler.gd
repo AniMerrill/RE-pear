@@ -37,7 +37,7 @@ func doPlayerTurn():
 		"Attack":
 			# FIXME: get target from player
 			var target = null
-			attack(target)
+			doAttack(target)
 		_:
 			# choice not found
 			pass
@@ -48,7 +48,7 @@ func doAITurn():
 	match choice:
 		"Attack":
 			var target = getAITarget()
-			attack(target)
+			doAttack(target)
 		_:
 			# choice not found
 			pass
@@ -64,12 +64,25 @@ func getAITarget ():
 	return null
 
 
-func attack(target):
+func animateAttack():
+	# FIXME: jump forward, wait 0.2 sec, jump back
+	if (self.isPlayer):
+		# forward is left
+		pass
+	else:
+		# forward is right
+		pass
+
+
+func doAttack(target):
 	# FIXME: message(moniker + " attacks!")
-	# FIXME: do damage calculation
-	var damage = attack
+	var damage = defenderCalcDamageFrom(self.attack, self.power)
 	target.takeDamage(damage)
 
+
+func defenderCalcDamageFrom(attack, power):
+	var damage = (attack * power) / self.defense
+	return damage
 
 func takeDamage(amount):
 	# FIXME: message(moniker + " takes " + amount + "damage!")

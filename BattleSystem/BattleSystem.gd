@@ -44,10 +44,10 @@ func hasPlayerLost():
 
 
 func win():
-	# go back to map
+	# FIXME: go back to map
 	pass
 
 
 func lose():
-	# go to gameover
+	# FIXME: go to gameover
 	pass
