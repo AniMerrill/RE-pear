@@ -1,8 +1,11 @@
 extends Node2D
 
+export var title : String
 export var nextChapter : String
 
 func _ready():
+	if self.title:
+		MessageSystem.showMessage(self.title)
 	print(self.name)
 
 # input event - runs when the input happens
