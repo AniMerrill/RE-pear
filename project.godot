@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="RE:pear"
-run/main_scene="res://Maps/Level_1_1.tscn"
+run/main_scene="res://Chapters/Intro.tscn"
 config/icon="res://icon.png"
 
 [autoload]
