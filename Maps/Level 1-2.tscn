@@ -1,0 +1,669 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Backgrounds/Level1_map2.png" type="Texture" id=1]
+[ext_resource path="res://Maps/CollisionObject.tscn" type="PackedScene" id=2]
+
+[node name="Level 1-2" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.33, 0.33 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionData" type="Node2D" parent="."]
+
+[node name="CollisionObject" parent="CollisionData" instance=ExtResource( 2 )]
+
+[node name="CollisionObject2" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 0 )
+
+[node name="CollisionObject3" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 0, 8 )
+
+[node name="CollisionObject4" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 8 )
+
+[node name="CollisionObject8" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 0 )
+
+[node name="CollisionObject7" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 0 )
+
+[node name="CollisionObject6" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 8 )
+
+[node name="CollisionObject5" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 8 )
+
+[node name="CollisionObject12" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 0 )
+
+[node name="CollisionObject11" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 0 )
+
+[node name="CollisionObject10" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 8 )
+
+[node name="CollisionObject9" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 8 )
+
+[node name="CollisionObject16" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 48, 0 )
+
+[node name="CollisionObject15" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 56, 0 )
+
+[node name="CollisionObject14" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 48, 8 )
+
+[node name="CollisionObject13" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 56, 8 )
+
+[node name="CollisionObject20" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 0 )
+
+[node name="CollisionObject19" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 0 )
+
+[node name="CollisionObject18" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 8 )
+
+[node name="CollisionObject17" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 8 )
+
+[node name="CollisionObject24" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 80, 0 )
+
+[node name="CollisionObject23" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 88, 0 )
+
+[node name="CollisionObject22" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 80, 8 )
+
+[node name="CollisionObject21" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 88, 8 )
+
+[node name="CollisionObject28" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 96, 0 )
+
+[node name="CollisionObject27" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 104, 0 )
+
+[node name="CollisionObject26" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 96, 8 )
+
+[node name="CollisionObject25" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 104, 8 )
+
+[node name="CollisionObject32" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 112, 0 )
+
+[node name="CollisionObject31" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 120, 0 )
+
+[node name="CollisionObject30" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 112, 8 )
+
+[node name="CollisionObject29" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 120, 8 )
+
+[node name="CollisionObject36" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 128, 0 )
+
+[node name="CollisionObject35" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 136, 0 )
+
+[node name="CollisionObject34" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 128, 8 )
+
+[node name="CollisionObject33" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 136, 8 )
+
+[node name="CollisionObject40" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 144, 0 )
+
+[node name="CollisionObject39" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 152, 0 )
+
+[node name="CollisionObject38" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 144, 8 )
+
+[node name="CollisionObject37" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 152, 8 )
+
+[node name="CollisionObject44" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 160, 0 )
+
+[node name="CollisionObject43" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 168, 0 )
+
+[node name="CollisionObject42" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 160, 8 )
+
+[node name="CollisionObject41" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 168, 8 )
+
+[node name="CollisionObject48" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 0 )
+
+[node name="CollisionObject47" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 236, 0 )
+
+[node name="CollisionObject46" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 8 )
+
+[node name="CollisionObject45" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 236, 8 )
+
+[node name="CollisionObject52" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 0 )
+
+[node name="CollisionObject51" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 252, 0 )
+
+[node name="CollisionObject50" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 8 )
+
+[node name="CollisionObject49" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 252, 8 )
+
+[node name="CollisionObject56" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 16 )
+
+[node name="CollisionObject55" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 236, 16 )
+
+[node name="CollisionObject54" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 24 )
+
+[node name="CollisionObject53" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 236, 24 )
+
+[node name="CollisionObject60" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 16 )
+
+[node name="CollisionObject59" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 252, 16 )
+
+[node name="CollisionObject58" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 24 )
+
+[node name="CollisionObject57" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 252, 24 )
+
+[node name="CollisionObject64" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 180 )
+
+[node name="CollisionObject63" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 252, 180 )
+
+[node name="CollisionObject62" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 188 )
+
+[node name="CollisionObject61" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 252, 188 )
+
+[node name="CollisionObject68" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 212, 180 )
+
+[node name="CollisionObject67" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 220, 180 )
+
+[node name="CollisionObject66" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 212, 188 )
+
+[node name="CollisionObject65" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 220, 188 )
+
+[node name="CollisionObject72" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 196, 180 )
+
+[node name="CollisionObject71" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 204, 180 )
+
+[node name="CollisionObject70" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 196, 188 )
+
+[node name="CollisionObject69" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 204, 188 )
+
+[node name="CollisionObject76" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 180, 180 )
+
+[node name="CollisionObject75" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 188, 180 )
+
+[node name="CollisionObject74" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 180, 188 )
+
+[node name="CollisionObject73" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 188, 188 )
+
+[node name="CollisionObject80" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 164, 180 )
+
+[node name="CollisionObject79" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 172, 180 )
+
+[node name="CollisionObject78" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 164, 188 )
+
+[node name="CollisionObject77" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 172, 188 )
+
+[node name="CollisionObject84" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 148, 180 )
+
+[node name="CollisionObject83" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 156, 180 )
+
+[node name="CollisionObject82" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 148, 188 )
+
+[node name="CollisionObject81" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 156, 188 )
+
+[node name="CollisionObject88" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 132, 180 )
+
+[node name="CollisionObject87" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 140, 180 )
+
+[node name="CollisionObject86" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 132, 188 )
+
+[node name="CollisionObject85" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 140, 188 )
+
+[node name="CollisionObject92" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 172 )
+
+[node name="CollisionObject91" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 172 )
+
+[node name="CollisionObject90" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 180 )
+
+[node name="CollisionObject89" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 180 )
+
+[node name="CollisionObject96" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 48, 172 )
+
+[node name="CollisionObject95" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 56, 172 )
+
+[node name="CollisionObject94" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 48, 180 )
+
+[node name="CollisionObject93" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 56, 180 )
+
+[node name="CollisionObject100" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 172 )
+
+[node name="CollisionObject99" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 172 )
+
+[node name="CollisionObject98" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 180 )
+
+[node name="CollisionObject97" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 180 )
+
+[node name="CollisionObject104" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 172 )
+
+[node name="CollisionObject103" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 172 )
+
+[node name="CollisionObject102" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 180 )
+
+[node name="CollisionObject101" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 180 )
+
+[node name="CollisionObject108" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 124 )
+
+[node name="CollisionObject107" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 124 )
+
+[node name="CollisionObject106" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 132 )
+
+[node name="CollisionObject105" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 132 )
+
+[node name="CollisionObject112" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 0, 16 )
+
+[node name="CollisionObject111" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 16 )
+
+[node name="CollisionObject110" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 0, 24 )
+
+[node name="CollisionObject109" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 24 )
+
+[node name="CollisionObject116" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 16 )
+
+[node name="CollisionObject115" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 16 )
+
+[node name="CollisionObject114" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 24 )
+
+[node name="CollisionObject113" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 24 )
+
+[node name="CollisionObject120" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 16 )
+
+[node name="CollisionObject119" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 16 )
+
+[node name="CollisionObject118" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 24 )
+
+[node name="CollisionObject117" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 24 )
+
+[node name="CollisionObject124" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 0, 48 )
+
+[node name="CollisionObject123" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 48 )
+
+[node name="CollisionObject122" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 0, 56 )
+
+[node name="CollisionObject121" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 56 )
+
+[node name="CollisionObject125" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 0, 40 )
+
+[node name="CollisionObject126" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 40 )
+
+[node name="CollisionObject127" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 40 )
+
+[node name="CollisionObject128" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 40 )
+
+[node name="CollisionObject129" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 40 )
+
+[node name="CollisionObject130" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 40 )
+
+[node name="CollisionObject131" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 48, 40 )
+
+[node name="CollisionObject132" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 56, 40 )
+
+[node name="CollisionObject133" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 40 )
+
+[node name="CollisionObject134" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 40 )
+
+[node name="CollisionObject135" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 176, 0 )
+
+[node name="CollisionObject136" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 188, 8 )
+
+[node name="CollisionObject137" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 188, 16 )
+
+[node name="CollisionObject138" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 196, 16 )
+
+[node name="CollisionObject139" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 204, 24 )
+
+[node name="CollisionObject140" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 204, 32 )
+
+[node name="CollisionObject141" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 212, 32 )
+
+[node name="CollisionObject142" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 212, 40 )
+
+[node name="CollisionObject143" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 204, 40 )
+
+[node name="CollisionObject144" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 212, 48 )
+
+[node name="CollisionObject145" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 204, 56 )
+
+[node name="CollisionObject146" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 196, 56 )
+
+[node name="CollisionObject147" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 188, 56 )
+
+[node name="CollisionObject148" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 180, 48 )
+
+[node name="CollisionObject149" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 172, 48 )
+
+[node name="CollisionObject150" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 172, 40 )
+
+[node name="CollisionObject151" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 140 )
+
+[node name="CollisionObject152" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 140 )
+
+[node name="CollisionObject153" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 56, 140 )
+
+[node name="CollisionObject154" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 48, 140 )
+
+[node name="CollisionObject155" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 140 )
+
+[node name="CollisionObject156" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 140 )
+
+[node name="CollisionObject157" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 140 )
+
+[node name="CollisionObject158" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 140 )
+
+[node name="CollisionObject159" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 140 )
+
+[node name="CollisionObject160" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 0, 140 )
+
+[node name="CollisionObject161" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( -8, 140 )
+
+[node name="CollisionObject174" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 80, 188 )
+
+[node name="CollisionObject173" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 88, 188 )
+
+[node name="CollisionObject172" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 72, 188 )
+
+[node name="CollisionObject177" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 96, 180 )
+
+[node name="CollisionObject176" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 104, 180 )
+
+[node name="CollisionObject178" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 112, 180 )
+
+[node name="CollisionObject179" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 112, 172 )
+
+[node name="CollisionObject180" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 120, 172 )
+
+[node name="CollisionObject181" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 128, 172 )
+
+[node name="CollisionObject182" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 136, 172 )
+
+[node name="CollisionObject183" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 136, 164 )
+
+[node name="CollisionObject184" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 144, 164 )
+
+[node name="CollisionObject185" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 144, 156 )
+
+[node name="CollisionObject186" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 144, 148 )
+
+[node name="CollisionObject187" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 152, 148 )
+
+[node name="CollisionObject188" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 160, 148 )
+
+[node name="CollisionObject189" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 168, 148 )
+
+[node name="CollisionObject190" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 176, 148 )
+
+[node name="CollisionObject191" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 176, 140 )
+
+[node name="CollisionObject192" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 184, 140 )
+
+[node name="CollisionObject193" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 184, 132 )
+
+[node name="CollisionObject194" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 192, 132 )
+
+[node name="CollisionObject195" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 192, 124 )
+
+[node name="CollisionObject196" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 80, 140 )
+
+[node name="CollisionObject197" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 80, 132 )
+
+[node name="CollisionObject198" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 88, 132 )
+
+[node name="CollisionObject199" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 88, 124 )
+
+[node name="CollisionObject200" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 96, 124 )
+
+[node name="CollisionObject201" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 104, 116 )
+
+[node name="CollisionObject202" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 112, 116 )
+
+[node name="CollisionObject203" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 112, 108 )
+
+[node name="CollisionObject204" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 120, 108 )
+
+[node name="CollisionObject205" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 128, 108 )
+
+[node name="CollisionObject206" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 136, 108 )
+
+[node name="CollisionObject207" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 144, 108 )
+
+[node name="CollisionObject208" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 188 )
+
+[node name="CollisionObject209" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 180 )
+
+[node name="CollisionObject210" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 172 )
+
+[node name="CollisionObject211" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 164 )
+
+[node name="CollisionObject212" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 220, 164 )
+
+[node name="CollisionObject213" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 220, 156 )
+
+[node name="CollisionObject214" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 220, 148 )
+
+[node name="CollisionObject215" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 228, 148 )
+
+[node name="CollisionObject216" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 236, 148 )
+
+[node name="CollisionObject217" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 172 )
+
+[node name="CollisionObject218" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 164 )
+
+[node name="CollisionObject219" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 244, 156 )
+
+[node name="CollisionObject175" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 88, 180 )
+
+[node name="CollisionObject171" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 64, 188 )
+
+[node name="CollisionObject170" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 56, 188 )
+
+[node name="CollisionObject169" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 48, 188 )
+
+[node name="CollisionObject168" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 40, 188 )
+
+[node name="CollisionObject167" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 32, 188 )
+
+[node name="CollisionObject166" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 24, 188 )
+
+[node name="CollisionObject165" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 16, 188 )
+
+[node name="CollisionObject164" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 188 )
+
+[node name="CollisionObject162" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 8, 180 )
+
+[node name="CollisionObject163" parent="CollisionData" instance=ExtResource( 2 )]
+position = Vector2( 0, 180 )
