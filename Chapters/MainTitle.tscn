@@ -6,7 +6,7 @@
 
 [node name="MainTitle" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
-nextChapter = "res://Chapters/Chapter1Title.tscn"
+nextChapter = "res://Maps/Level1.tscn"
 
 [node name="Background" parent="." index="0"]
 texture = ExtResource( 2 )
