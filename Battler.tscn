@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://jon scratch/Battler.gd" type="Script" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/artichoke.png-4a8428bf394263cf8cd1784de7230cb9.stex"
+
+[node name="Battler" type="Sprite"]
+texture = SubResource( 1 )
+hframes = 3
+frame = 2
+script = ExtResource( 1 )

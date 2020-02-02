@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Battler.tscn" type="PackedScene" id=1]
+[ext_resource path="res://fail-artichoke.png" type="Texture" id=2]
+
+[node name="dope ass battle scene" type="Node2D"]
+
+[node name="Battler" parent="." instance=ExtResource( 1 )]
+position = Vector2( 220, 85 )
+texture = ExtResource( 2 )
