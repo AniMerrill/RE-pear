@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Maps/Level 1-2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Objects/SceneChangeTrigger.gd" type="Script" id=3]
+[ext_resource path="res://Play Music Trigger.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 32 )
@@ -23,3 +24,5 @@ player_position = Vector2( 240, 104 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( -4, -104 )
 shape = SubResource( 1 )
+
+[node name="Play Music Trigger" parent="." instance=ExtResource( 4 )]

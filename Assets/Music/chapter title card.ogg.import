@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/chapter title card.ogg-a728f7ecc18b15d1baa5fea9721ff21a.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/chapter title card.ogg"
+dest_files=[ "res://.import/chapter title card.ogg-a728f7ecc18b15d1baa5fea9721ff21a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
