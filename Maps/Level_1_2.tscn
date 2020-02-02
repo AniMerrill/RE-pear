@@ -49,7 +49,7 @@ polygon = PoolVector2Array( 192, -8, 224, -8, 224, 0, 192, 0 )
 [node name="WestTrigger" type="Area2D" parent="."]
 script = ExtResource( 5 )
 scene = "res://Maps/Level_1_1.tscn"
-player_position = Vector2( 248, 124 )
+player_position = Vector2( 230, 125 )
 player_direction = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WestTrigger"]
