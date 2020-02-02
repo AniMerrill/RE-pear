@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://BattleSystem/Battler.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Objects/REpear Specific/pumpkin.png" type="Texture" id=2]
@@ -11,11 +11,88 @@
 [ext_resource path="res://Assets/Objects/REpear Specific/pear_sheet.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Objects/REpear Specific/beet_mook.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Objects/REpear Specific/potato.png" type="Texture" id=11]
+[ext_resource path="res://BattleSystem/BattleSystem.gd" type="Script" id=12]
 
-[node name="dope ass battle scene" type="Node2D"]
+[node name="Battle Scene" type="Node2D"]
 
-[node name="BattlerPear" parent="." instance=ExtResource( 1 )]
-position = Vector2( 320.104, 87.9823 )
+[node name="BattleSystem" type="Node" parent="."]
+script = ExtResource( 12 )
+enemies = [ null ]
+
+[node name="Enemy Templates" type="Node" parent="."]
+
+[node name="BattlerGourd" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -121.614, -63.4688 )
+texture = ExtResource( 3 )
+moniker = "Gourd"
+defense = 2
+
+[node name="BattlerOnion" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -121.246, -42.4899 )
+texture = ExtResource( 4 )
+moniker = "Onion"
+attack = 2
+
+[node name="BattlerPumpkin" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -120.51, -19.671 )
+texture = ExtResource( 2 )
+moniker = "Pumpkin"
+hp = 10
+attack = 3
+defense = 5
+
+[node name="BattlerLettuce" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -89.962, -62.9167 )
+texture = ExtResource( 6 )
+moniker = "Lettuce"
+hp = 7
+attack = 3
+defense = 4
+
+[node name="BattlerSpinach" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -90.146, -41.9378 )
+texture = ExtResource( 5 )
+moniker = "Spinach"
+hp = 7
+attack = 4
+defense = 3
+
+[node name="BattlerArtichoke" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -90.323, -19.709 )
+texture = ExtResource( 7 )
+moniker = "Artichoke"
+hp = 12
+attack = 7
+defense = 5
+
+[node name="BattlerBeet" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -61.253, -64.0209 )
+texture = ExtResource( 10 )
+moniker = "Beet"
+hp = 9
+attack = 5
+defense = 6
+
+[node name="BattlerCarrot" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -61.622, -43.41 )
+texture = ExtResource( 8 )
+moniker = "Carrot"
+hp = 9
+attack = 6
+defense = 5
+
+[node name="BattlerPotato" parent="Enemy Templates" instance=ExtResource( 1 )]
+position = Vector2( -61.07, -19.855 )
+texture = ExtResource( 11 )
+moniker = "Potato"
+hp = 15
+attack = 9
+defense = 7
+
+[node name="Player Templates" type="Node" parent="."]
+
+[node name="BattlerPear" parent="Player Templates" instance=ExtResource( 1 )]
+position = Vector2( -23.896, -41.0177 )
 texture = ExtResource( 9 )
 flip_h = true
 moniker = "Pear"
@@ -23,71 +100,3 @@ hp = 10
 attack = 5
 defense = 5
 isPlayer = true
-
-[node name="BattlerGourd" parent="." instance=ExtResource( 1 )]
-position = Vector2( 222.386, 65.5312 )
-texture = ExtResource( 3 )
-moniker = "Gourd"
-defense = 2
-
-[node name="BattlerOnion" parent="." instance=ExtResource( 1 )]
-position = Vector2( 222.754, 86.5101 )
-texture = ExtResource( 4 )
-moniker = "Onion"
-attack = 2
-
-[node name="BattlerPumpkin" parent="." instance=ExtResource( 1 )]
-position = Vector2( 223.49, 109.329 )
-texture = ExtResource( 2 )
-moniker = "Pumpkin"
-hp = 10
-attack = 3
-defense = 5
-
-[node name="BattlerLettuce" parent="." instance=ExtResource( 1 )]
-position = Vector2( 254.038, 66.0833 )
-texture = ExtResource( 6 )
-moniker = "Lettuce"
-hp = 7
-attack = 3
-defense = 4
-
-[node name="BattlerSpinach" parent="." instance=ExtResource( 1 )]
-position = Vector2( 253.854, 87.0622 )
-texture = ExtResource( 5 )
-moniker = "Spinach"
-hp = 7
-attack = 4
-defense = 3
-
-[node name="BattlerArtichoke" parent="." instance=ExtResource( 1 )]
-position = Vector2( 253.677, 109.291 )
-texture = ExtResource( 7 )
-moniker = "Artichoke"
-hp = 12
-attack = 7
-defense = 5
-
-[node name="BattlerBeet" parent="." instance=ExtResource( 1 )]
-position = Vector2( 282.747, 64.9791 )
-texture = ExtResource( 10 )
-moniker = "Beet"
-hp = 9
-attack = 5
-defense = 6
-
-[node name="BattlerCarrot" parent="." instance=ExtResource( 1 )]
-position = Vector2( 282.378, 85.59 )
-texture = ExtResource( 8 )
-moniker = "Carrot"
-hp = 9
-attack = 6
-defense = 5
-
-[node name="BattlerPotato" parent="." instance=ExtResource( 1 )]
-position = Vector2( 282.93, 109.145 )
-texture = ExtResource( 11 )
-moniker = "Potato"
-hp = 15
-attack = 9
-defense = 7

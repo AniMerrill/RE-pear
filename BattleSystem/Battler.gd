@@ -23,11 +23,12 @@ func _ready():
 
 
 func doTurn(battleSystem):
-	self.battleSystem = battleSystem
-	if (isPlayer):
-		doPlayerTurn()
-	else:
-		doAITurn()
+	if (alive):
+		self.battleSystem = battleSystem
+		if (isPlayer):
+			doPlayerTurn()
+		else:
+			doAITurn()
 
 
 func doPlayerTurn():
@@ -93,3 +94,4 @@ func takeDamage(amount):
 
 func die():
 	self.alive = false
+	# FIXME: destroy the battler object
