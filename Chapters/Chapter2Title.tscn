@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Chapters/ChapterTitle.tscn" type="PackedScene" id=1]
+
+[node name="Chapter2Title" instance=ExtResource( 1 )]
+nextChapter = "res://Chapters/Chapter3Title.tscn"
