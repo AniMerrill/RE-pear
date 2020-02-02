@@ -1,8 +1,10 @@
 extends Area2D
 
+enum Direction {EAST, NORTH, WEST, SOUTH}
 
 export var scene : String
 export var player_position := Vector2.ZERO
+export (Direction) var player_direction := Direction.EAST
 
 
 func _ready():

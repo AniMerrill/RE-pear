@@ -7,9 +7,10 @@ var velocity := Vector2.ZERO
 var speed := Globals.UNIT_SIZE * tiles_per_second
 
 
+# NOTE: Player's origin point is the top right of their hitbox
 func _ready():
 	if Globals.set_player_to_position:
-		position = Globals.player_new_position
+		global_position = Globals.player_new_position
 		Globals.set_player_to_position = false
 
 func _physics_process(delta):

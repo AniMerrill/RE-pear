@@ -16,25 +16,22 @@ _global_script_class_icons={
 [application]
 
 config/name="RE:pear"
-run/main_scene="res://OverworldTest.tscn"
+run/main_scene="res://Maps/Level_1_1.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Globals="*res://Globals.gd"
+SceneTransition="*res://Screens/SceneTransition.tscn"
 
 [display]
 
 window/size/width=160
 window/size/height=144
-window/size/test_width=320
-window/size/test_height=288
+window/size/test_width=640
+window/size/test_height=576
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
-
-[editor_plugins]
-
-enabled=PoolStringArray( "vnen.tiled_importer" )
 
 [importer_defaults]
 

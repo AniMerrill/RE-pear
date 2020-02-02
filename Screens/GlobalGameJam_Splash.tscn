@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Backgrounds/global_game_jam.png" type="Texture" id=1]
+[ext_resource path="res://Screens/OneShotTransition.gd" type="Script" id=2]
+
+[node name="GlobalGameJam_Splash" type="Sprite"]
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 2 )
+next_scene = "res://Screens/TitleScreen.tres"
+seconds_to_wait = 3
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
