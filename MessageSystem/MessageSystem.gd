@@ -8,6 +8,7 @@ var box: Control
 func _ready():
 	box = self.find_node("MessageBox")
 	label = self.find_node("MessageLabel")
+#	cursor 
 	hideMessage()
 
 

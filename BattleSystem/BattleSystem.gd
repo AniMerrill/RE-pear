@@ -39,6 +39,12 @@ func startBattle():
 func addBattlers():
 	# FIXME: add battlers
 	print("adding battlers")
+	self.enemies = get_tree().get_nodes_in_group("enemies")
+	self.friendlies = get_tree().get_nodes_in_group("friendlies")
+#	self.enemies.append(self.get_node("BattlerLettuce1"))
+#	self.enemies.append(self.get_node("BattlerLettuce2"))
+#	self.enemies.append(self.get_node("BattlerLettuce3"))
+#	self.friendlies.append(self.get_node("BattlerPear1"))
 	pass
 
 
@@ -52,17 +58,18 @@ func doRound():
 		
 		# do player turn
 		for battler in friendlies:
-			battler.doTurn()
+			battler.doTurn(self)
 		
 		# for each enemy, do turns
 		for battler in enemies:
-			battler.doTurn()
+			battler.doTurn(self)
 
 
 func hasPlayerWon():
 	# are all enemies dead
 	var anyAlive = false
 	for battler in enemies:
+		print(battler)
 		if battler.alive:
 			anyAlive = true 
 	return !anyAlive
@@ -72,6 +79,7 @@ func hasPlayerLost():
 	# are all friendlies dead
 	var anyAlive = false
 	for battler in friendlies:
+		print(battler)
 		if battler.alive:
 			anyAlive = true 
 	return !anyAlive
@@ -79,6 +87,7 @@ func hasPlayerLost():
 
 func win():
 	# FIXME: go back to map
+	MessageSystem.message("Battle won!")
 	print("battle won")
 	battleActive = false
 	pass
@@ -86,6 +95,22 @@ func win():
 
 func lose():
 	# FIXME: go to gameover
+	MessageSystem.message("Battle lost!")
 	print("battle lost")
 	battleActive = false
 	pass
+
+
+func getRandomFriendly():
+	# FIXME: make random
+	# FIXME: guard vs out of bounds
+	var result = self.friendlies[0]
+	print("get random friendly:", self.friendlies, result)
+	return result
+	
+func getRandomEnemy():
+	# FIXME: make random
+	# FIXME: guard vs out of bounds
+	var result = self.enemies[0]
+	print("get random friendly:", self.enemies, result)
+	return result
