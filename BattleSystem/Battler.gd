@@ -1,10 +1,11 @@
 extends Node
-
+class_name Battler
 
 export var type = ""
 export var moniker = ""
 export var hp = 5
 export var attack = 1
+export var power = 1
 export var defense = 1
 export var isPlayer = false
 var alive = true
@@ -37,7 +38,7 @@ func doPlayerTurn():
 	match choice:
 		"Attack":
 			# FIXME: get target from player
-			var target = null
+			var target = getPlayerTarget()
 			doAttack(target)
 		_:
 			# choice not found
@@ -55,14 +56,19 @@ func doAITurn():
 			pass
 
 
-func getAIChoice ():
+func getAIChoice():
 	# FIXME: determine choice randomly based on type
 	return "Attack"
 
 
+func getPlayerTarget():
+	# FIXME: determine target by player input
+	return self.battleSystem.getRandomEnemy()
+	
+	
 func getAITarget ():
 	# FIXME: determine target randomly
-	return null
+	return self.battleSystem.getRandomFriendly()
 
 
 func animateAttack():
@@ -75,8 +81,8 @@ func animateAttack():
 		pass
 
 
-func doAttack(target):
-	# FIXME: message(moniker + " attacks!")
+func doAttack(target: Battler):
+	MessageSystem.showMessage("%s attacks!" % moniker)
 	var damage = defenderCalcDamageFrom(self.attack, self.power)
 	target.takeDamage(damage)
 
@@ -85,8 +91,9 @@ func defenderCalcDamageFrom(attack, power):
 	var damage = (attack * power) / self.defense
 	return damage
 
+
 func takeDamage(amount):
-	# FIXME: message(moniker + " takes " + amount + "damage!")
+	MessageSystem.showMessage("%s takes %d damage!" % [moniker, amount])
 	hp -= amount
 	if hp < 0:
 		die()
