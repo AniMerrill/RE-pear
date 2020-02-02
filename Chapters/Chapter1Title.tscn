@@ -3,4 +3,5 @@
 [ext_resource path="res://Chapters/ChapterTitle.tscn" type="PackedScene" id=1]
 
 [node name="Chapter1Title" instance=ExtResource( 1 )]
+title = "CHAPTER 1"
 nextChapter = "res://Chapters/Chapter2Title.tscn"
